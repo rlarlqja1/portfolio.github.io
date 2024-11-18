@@ -27,7 +27,7 @@ body .fixed {
     box-shadow: 0 0 5px 0 black;
 }
 
-#header #main_header{
+#header .main_header{
     width: 100%;
     max-width: 71.25rem;
     margin: 0 auto;
@@ -37,7 +37,7 @@ body .fixed {
     padding: 1.25rem 1.5rem;
 }
 
-#header #main_header .header_logo{
+#header .main_header .header_logo{
     font-weight: 700;
     font-size: 1.5rem;
     color: hsla(0,0%,100%,.7);
@@ -45,12 +45,12 @@ body .fixed {
     font-family: "Noto Sans KR";
 }
 
-#header #main_header .header_logo:hover{
+#header .main_header .header_logo:hover{
     color: #fff;
     cursor: pointer;
 }
 
-#header #main_header #menu{
+#header .main_header #menu{
     display: flex;
 }
 
@@ -164,7 +164,15 @@ body .fixed {
     background-color: orange;
 }
 
-.skill .skills{
+.skills{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sk_main{
     width: 1200px;
     margin: 0 auto;
     display: flex;
