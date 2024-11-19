@@ -276,7 +276,6 @@ body .fixed {
 
 .archive .arch .archive_link .gitlink{
     width: 80%;
-    /* height: 20px; */
     display: flex;
     align-items: center;
     font-family: "Noto Sans KR";
