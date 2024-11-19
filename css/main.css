@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 button{
     border: 0px;
     background-color: transparent;
@@ -162,6 +167,7 @@ body .fixed {
     width: 100%;
     height: 400px;
     background-color: orange;
+    display: block;
 }
 
 .skills{
@@ -170,6 +176,16 @@ body .fixed {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 3rem 0 3rem 0;
+}
+
+.skill_header h1{
+    font-family: "Noto Sans KR";
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000;
 }
 
 .sk_main{
@@ -177,12 +193,102 @@ body .fixed {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 30px;
 }
+
+.sk_main .sk_inside{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.sk_main .sk_inside .sk{
+    width: 120px;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.sk_main .sk_inside .sk img{
+    width: 5dvw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sk_main .sk_inside .sk:nth-child(n+4) img{
+    width: 7dvw;
+    object-fit: contain;
+}
+
 
 .archive{
     width: 100%;
-    height: 300px;
+    height: 400px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.arch{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.archive .arch_title{
+    width: 800px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.archive .arch .arch_title h3{
+    font-family: "Noto Sans KR";
+    font-size: 4rem;
+    color: #fff;
+}
+
+.archive .arch .archive_link{
+    width: 500px;
+    height: 200px;
+    background-color: #fff;
+    padding: 2rem;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+}
+
+.archive .arch .archive_link .github{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.archive .arch .archive_link .github img{
+    height: 100%;
+    object-fit: contain;
+}
+
+.archive .arch .archive_link .gitlink{
+    width: 80%;
+    /* height: 20px; */
+    display: flex;
+    align-items: center;
+    font-family: "Noto Sans KR";
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #05b2b5;
+}
+
+.archive_link .archive_direction{
+    font-family: "Noto Sans KR";
+    width: 80%;
+    font-size: .8rem;
 }
 
 .port{
