@@ -5,3 +5,6 @@ https://eunne.tistory.com/103
 
  CRLF the next time Git touches it 문제 해결
 git config --global core.autocrlf true
+
+버튼 팝업
+https://abcdqbbq.tistory.com/93

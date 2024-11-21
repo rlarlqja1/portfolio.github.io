@@ -9,20 +9,129 @@ const headerbarHeight = headerbar.getBoundingClientRect().height;
 const headerLogo = document.querySelector(".header_logo");
 const headerMenu = document.querySelectorAll("nav > button");
 
+
 document.addEventListener("scroll", ()=> {
     const scrollY = window.scrollY;
 
     if (window.scrollY > headerbarHeight){
         headerbar.classList.add("fixed");
-        headerLogo.style.color = "darkgray";
+        headerLogo.style.color = "black";
+
+        headerLogo.addEventListener("mouseover", function (event) {
+            event.target.style.color = "orange";
+          }, false);
+
+          headerLogo.addEventListener("mouseout", function (event) {
+            event.target.style.color = "black";
+          }, false);
         for (var name in headerMenu){
-            headerMenu[name].style.color = "darkgray";
+            headerMenu[name].style.color = "black";
+
+            headerMenu[name].addEventListener("mouseover", function (event) {
+                event.target.style.color = "orange";
+            }, false);
+
+            headerMenu[name].addEventListener("mouseout", function (event) {
+                event.target.style.color = "black";
+            }, false);
         }
     } else {
         headerbar.classList.remove("fixed");
         headerLogo.style.color = "hsla(0,0%,100%,.7)";
+
+        headerLogo.addEventListener("mouseover", function (event) {
+            event.target.style.color = "white";
+        }, false);
+
+        headerLogo.addEventListener("mouseout", function (event) {
+            event.target.style.color = "hsla(0,0%,100%,.7)";
+        }, false);
+
         for (name in headerMenu){
             headerMenu[name].style.color = "hsla(0,0%,100%,.7)";
+
+            headerMenu[name].addEventListener("mouseover", function (event) {
+                event.target.style.color = "white";
+            }, false);
+            
+            headerMenu[name].addEventListener("mouseout", function (event) {
+                event.target.style.color = "hsla(0,0%,100%,.7)";
+            }, false);
         }
     }
 });
+
+headerLogo.addEventListener("mouseover", function (event) {
+    event.target.style.color = "white";
+}, false);
+
+headerLogo.addEventListener("mouseout", function (event) {
+    event.target.style.color = "hsla(0,0%,100%,.7)";
+}, false);
+
+for (name in headerMenu){
+    headerMenu[name].addEventListener("mouseover", function(event){
+        event.target.style.color = "white";
+    });
+
+    headerMenu[name].addEventListener("mouseout", function(event){
+        event.target.style.color = "hsla(0,0%,100%,.7)";
+    });
+}
+
+// 모달
+function popup1() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup1');
+    modal_popup.style.display = "block";
+    pro_pop.style.display = "block";
+}
+
+function popup2() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup2');
+    modal_popup.style.display = "block";
+    pro_pop.style.display = "block";
+}
+
+function popup3() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup3');
+    modal_popup.style.display = "block";
+    pro_pop.style.display = "block";
+}
+
+function popup4() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup4');
+    modal_popup.style.display = "block";
+    pro_pop.style.display = "block";
+}
+
+function btn_close() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup1');
+    modal_popup.style.display = "none";
+    pro_pop.style.display = "none";
+}
+
+function btn_close2() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup2');
+    modal_popup.style.display = "none";
+    pro_pop.style.display = "none";
+}
+
+function btn_close3() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup3');
+    modal_popup.style.display = "none";
+    pro_pop.style.display = "none";
+}
+
+function btn_close4() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup4');
+    modal_popup.style.display = "none";
+    pro_pop.style.display = "none";
+}

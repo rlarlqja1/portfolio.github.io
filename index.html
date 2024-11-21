@@ -14,7 +14,8 @@
                 <button class="header_menu" type="button" onclick="goToScroll('about_me')">About me</button>
                 <button class="header_menu" type="button" onclick="goToScroll('skill')">Skill</button>
                 <button class="header_menu" type="button" onclick="goToScroll('archive')">Archive</button>
-                <button class="header_menu" type="button" onclick="goToScroll('port')">Portfolio</button>
+                <button class="header_menu" type="button" onclick="goToScroll('project')">Projects</button>
+                <button class="header_menu" type="button" onclick="goToScroll('career')">Career</button>
             </nav>
         </div>
     </header>
@@ -33,37 +34,64 @@
                 <div id="name" class="ab">
                     <div class="inside">
                         <img src="./img/name.fa083cfb.svg" alt="name">
-                        <h3>이름<br>김기범</h3>
+                        <div class="inside_text">
+                            <label class="about_me_text">이름</label>
+                            <div class="about_me_user">김기범</div>
+                        </div>
                     </div>
                 </div>
                 <div id="birth" class="ab">
                     <div class="inside">
                         <img src="./img/birthdate.5bfe2a95.svg" alt="birth">
-                        <h3>생년월일<br>2002.12.22</h3>
+                        <div class="inside_text">
+                            <label class="about_me_text">생년월일</label>
+                            <div class="about_me_user">2002.12.22</div>
+                        </div>
                     </div>
                 </div>
                 <div id="locate" class="ab">
                     <div class="inside">
                         <img src="./img/location.665eb728.svg" alt="locate">
-                        <h3>주소<br>제주시</h3>
+                        <div class="inside_text">
+                            <label class="about_me_text">주소</label>
+                            <div class="about_me_user">제주시 천수로</div>
+                        </div>
                     </div>
                 </div>
                 <div id="phone" class="ab">
                     <div class="inside">
                         <img src="./img/phone.0b0f8955.svg" alt="phone">
-                        <h3>전화번호<br>010-3699-1021</h3>
+                        <div class="inside_text">
+                            <label class="about_me_text">전화번호</label>
+                            <div class="about_me_user">010-3699-1021</div>
+                        </div>
                     </div>
                 </div>
                 <div id="email" class="ab">
                     <div class="inside">
                         <img src="./img/email.f8008661.svg" alt="email">
-                        <h3>이메일<br>rlarlqja1222@naver.com</h3>
+                        <div class="inside_text">
+                            <label class="about_me_text">이메일</label>
+                            <div class="about_me_user">rlarlqja1222@naver.com</div>
+                        </div>
                     </div>
                 </div>
                 <div id="edu" class="ab">
                     <div class="inside">
                         <img src="./img/education.0867cbcb.svg" alt="education">
-                        <h3>학력<br>한국폴리텍대학 제주캠퍼스<br>소프트웨어융합디자인과</h3>
+                        <div class="inside_text">
+                            <label class="about_me_text">학력</label>
+                            <div class="about_me_user">한국폴리텍대학교 제주캠퍼스 소프트웨어융합디자인과</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="qual" class="ab">
+                    <div class="inside">
+                        <img src="./img/qual.png" alt="qual">
+                        <div class="inside_text">
+                            <label class="about_me_text">자격증</label>
+                            <div class="about_me_user">- 2021 웹디자인기능사 <br>- 2020 드론 조종사</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,6 +116,12 @@
                     <div class="sk">
                         <img src="./img/python.png" alt="python_img">
                     </div>
+                    <div class="sk">
+                        <img src="./img/php.png" alt="python_img">
+                    </div>
+                    <div class="sk">
+                        <img src="./img/mysql.png" alt="python_img">
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,8 +140,347 @@
             </a>
         </div>
     </div>
-    <div class="port"></div>
+    <div class="project">
+        <div class="project_inside">
+            <div class="project_header">
+                <h3>PROJECTS</h3>
+            </div>
+            <div class="project_detail">
+                <div class="project_detail_box">
+                    <h4 class="ProjectDetail_name">프로젝트 이름</h4>
+                    <div class="ProjectDetail_period">날짜(몇인 프로젝트)</div>
+                    <div class="ProjectDetail_intro">
+                        <h5 class="ProjectDetail_title">프로젝트 설명 제목</h5>
+                        <ul class="ProjectDetail_details">
+                            <li>프로젝트 설명</li>
+                            <li>프로젝트 설명</li>
+                            <li>프로젝트 설명</li>
+                        </ul>
+                    </div>
+                    <div class="ProjectDetail_url">
+                        <a href="#" target="_blank">프로젝트 url</a>
+                    </div>
+                    <div class="ProjectDetail_skill">html, css, js, php</div>
+                    <div class="ProjectDetail_button_container">
+                        <button class="ProjectDetail_show_readme" type="button" id="btn1" onclick="popup1()">
+                            <img src="./img/readme.c694b766.svg" alt="readme">
+                            README
+                        </button>
+                    </div>
+                </div>
+                <div class="project_detail_box">
+                    <h4 class="ProjectDetail_name">프로젝트 이름</h4>
+                    <div class="ProjectDetail_period">날짜(몇인 프로젝트)</div>
+                    <div class="ProjectDetail_intro">
+                        <h5 class="ProjectDetail_title">프로젝트 설명 제목</h5>
+                        <ul class="ProjectDetail_details">
+                            <li>프로젝트 설명</li>
+                            <li>프로젝트 설명</li>
+                            <li>프로젝트 설명</li>
+                        </ul>
+                    </div>
+                    <div class="ProjectDetail_url">
+                        <a href="#" target="_blank">프로젝트 url</a>
+                    </div>
+                    <div class="ProjectDetail_skill">html, css, js, php</div>
+                    <div class="ProjectDetail_button_container">
+                        <button class="ProjectDetail_show_readme" type="button" id="btn2" onclick="popup2()">
+                            <img src="./img/readme.c694b766.svg" alt="readme">
+                            README
+                        </button>
+                    </div>
+                </div>
+                <div class="project_detail_box">
+                    <h4 class="ProjectDetail_name">프로젝트 이름</h4>
+                    <div class="ProjectDetail_period">날짜(몇인 프로젝트)</div>
+                    <div class="ProjectDetail_intro">
+                        <h5 class="ProjectDetail_title">프로젝트 설명 제목</h5>
+                        <ul class="ProjectDetail_details">
+                            <li>프로젝트 설명</li>
+                            <li>프로젝트 설명</li>
+                            <li>프로젝트 설명</li>
+                        </ul>
+                    </div>
+                    <div class="ProjectDetail_url">
+                        <a href="#" target="_blank">프로젝트 url</a>
+                    </div>
+                    <div class="ProjectDetail_skill">html, css, js, php</div>
+                    <div class="ProjectDetail_button_container">
+                        <button class="ProjectDetail_show_readme" type="button" id="btn3" onclick="popup3()">
+                            <img src="./img/readme.c694b766.svg" alt="readme">
+                            README
+                        </button>
+                    </div>
+                </div>
+                <div class="project_detail_box">
+                    <h4 class="ProjectDetail_name">프로젝트 이름</h4>
+                    <div class="ProjectDetail_period">날짜(몇인 프로젝트)</div>
+                    <div class="ProjectDetail_intro">
+                        <h5 class="ProjectDetail_title">프로젝트 설명 제목</h5>
+                        <ul class="ProjectDetail_details">
+                            <li>프로젝트 설명</li>
+                            <li>프로젝트 설명</li>
+                            <li>프로젝트 설명</li>
+                        </ul>
+                    </div>
+                    <div class="ProjectDetail_url">
+                        <a href="#" target="_blank">프로젝트 url</a>
+                    </div>
+                    <div class="ProjectDetail_skill">html, css, js, php</div>
+                    <div class="ProjectDetail_button_container">
+                        <button class="ProjectDetail_show_readme" type="button" id="btn4" onclick="popup4()">
+                            <img src="./img/readme.c694b766.svg" alt="readme">
+                            README
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="career"></div>
     <footer></footer>
+    <!-- 팝업 -->
+    <div class="modal_pop modal_pop" id="modal_pop"></div>
+    <div class="project_popup" role="dialog" arial-model="true" id="project_popup1">
+        <div class="popup">
+            <div class="popup_box">
+                <div class="popup_header">
+                    README.md
+                    <button class="btn_close" type="button" aria-label="close" id="close_btn" onclick="btn_close()"></button>
+                </div>
+                <div class="popup_body">
+                    <div id="readme" class="md" data-path="README.ME">
+                        <article class="markdown-body">
+                            <div class="markdown-heading" dir="auto">
+                                <h1 class="heading-element" dir="auto">프로젝트 제목</h1>
+                            </div>
+                            <div class="markdown-heading" dir="auto">
+                                <h6 class="heading-element" dir="auto">날짜(몇인 프로젝트)</h6>
+                            </div>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 dir="auto">🔗 Deployment url</h2>
+                            </div>
+                            <p dir="auto">
+                                <a href="#" rel="nofollow">프로젝트 url</a>
+                            </p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">📌 Summary</h2>
+                            </div>
+                            <p dir="auto">
+                                <strong>프로젝트 설명 제목</strong>
+                            </p>
+                            <ul dir="auto">
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                            </ul>
+                            <blockquote>
+                                <p dir="auto">주요 기능: </p>
+                            </blockquote>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🤔 Background</h2>
+                            </div>
+                            <p dir="auto">프로젝트 배경</p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🔍 Meaning</h2>
+                            </div>
+                            <p dir="auto">프로젝트하면서 느낀점</p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🔨 Use Tech</h2>
+                            </div>
+                            <p dir="auto">html, css, js</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project_popup" role="dialog" arial-model="true" id="project_popup2">
+        <div class="popup">
+            <div class="popup_box">
+                <div class="popup_header">
+                    README.md
+                    <button class="btn_close" type="button" aria-label="close" id="close_btn" onclick="btn_close2()"></button>
+                </div>
+                <div class="popup_body">
+                    <div id="readme" class="md" data-path="README.ME">
+                        <article class="markdown-body">
+                            <div class="markdown-heading" dir="auto">
+                                <h1 class="heading-element" dir="auto">프로젝트 제목2</h1>
+                            </div>
+                            <div class="markdown-heading" dir="auto">
+                                <h6 class="heading-element" dir="auto">날짜(몇인 프로젝트)</h6>
+                            </div>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 dir="auto">🔗 Deployment url</h2>
+                            </div>
+                            <p dir="auto">
+                                <a href="#" rel="nofollow">프로젝트 url</a>
+                            </p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">📌 Summary</h2>
+                            </div>
+                            <p dir="auto">
+                                <strong>프로젝트 설명 제목</strong>
+                            </p>
+                            <ul dir="auto">
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                            </ul>
+                            <blockquote>
+                                <p dir="auto">주요 기능: </p>
+                            </blockquote>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🤔 Background</h2>
+                            </div>
+                            <p dir="auto">프로젝트 배경</p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🔍 Meaning</h2>
+                            </div>
+                            <p dir="auto">프로젝트하면서 느낀점</p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🔨 Use Tech</h2>
+                            </div>
+                            <p dir="auto">html, css, js</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project_popup" role="dialog" arial-model="true" id="project_popup3">
+        <div class="popup">
+            <div class="popup_box">
+                <div class="popup_header">
+                    README.md
+                    <button class="btn_close" type="button" aria-label="close" id="close_btn" onclick="btn_close3()"></button>
+                </div>
+                <div class="popup_body">
+                    <div id="readme" class="md" data-path="README.ME">
+                        <article class="markdown-body">
+                            <div class="markdown-heading" dir="auto">
+                                <h1 class="heading-element" dir="auto">프로젝트 제목3</h1>
+                            </div>
+                            <div class="markdown-heading" dir="auto">
+                                <h6 class="heading-element" dir="auto">날짜(몇인 프로젝트)</h6>
+                            </div>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 dir="auto">🔗 Deployment url</h2>
+                            </div>
+                            <p dir="auto">
+                                <a href="#" rel="nofollow">프로젝트 url</a>
+                            </p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">📌 Summary</h2>
+                            </div>
+                            <p dir="auto">
+                                <strong>프로젝트 설명 제목</strong>
+                            </p>
+                            <ul dir="auto">
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                            </ul>
+                            <blockquote>
+                                <p dir="auto">주요 기능: </p>
+                            </blockquote>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🤔 Background</h2>
+                            </div>
+                            <p dir="auto">프로젝트 배경</p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🔍 Meaning</h2>
+                            </div>
+                            <p dir="auto">프로젝트하면서 느낀점</p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🔨 Use Tech</h2>
+                            </div>
+                            <p dir="auto">html, css, js</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project_popup" role="dialog" arial-model="true" id="project_popup4">
+        <div class="popup">
+            <div class="popup_box">
+                <div class="popup_header">
+                    README.md
+                    <button class="btn_close" type="button" aria-label="close" id="close_btn" onclick="btn_close4()"></button>
+                </div>
+                <div class="popup_body">
+                    <div id="readme" class="md" data-path="README.ME">
+                        <article class="markdown-body">
+                            <div class="markdown-heading" dir="auto">
+                                <h1 class="heading-element" dir="auto">프로젝트 제목4</h1>
+                            </div>
+                            <div class="markdown-heading" dir="auto">
+                                <h6 class="heading-element" dir="auto">날짜(몇인 프로젝트)</h6>
+                            </div>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 dir="auto">🔗 Deployment url</h2>
+                            </div>
+                            <p dir="auto">
+                                <a href="#" rel="nofollow">프로젝트 url</a>
+                            </p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">📌 Summary</h2>
+                            </div>
+                            <p dir="auto">
+                                <strong>프로젝트 설명 제목</strong>
+                            </p>
+                            <ul dir="auto">
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                                <li>프로젝트 설명</li>
+                            </ul>
+                            <blockquote>
+                                <p dir="auto">주요 기능: </p>
+                            </blockquote>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🤔 Background</h2>
+                            </div>
+                            <p dir="auto">프로젝트 배경</p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🔍 Meaning</h2>
+                            </div>
+                            <p dir="auto">프로젝트하면서 느낀점</p>
+                            <br>
+                            <div class="markdown-heading" dir="auto">
+                                <h2 class="heading-element" dir="auto">🔨 Use Tech</h2>
+                            </div>
+                            <p dir="auto">html, css, js</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 </html>
