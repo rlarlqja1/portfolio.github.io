@@ -49,6 +49,8 @@ body .fixed{
     box-shadow: 0 0 5px 0 black;
 }
 
+
+/* 헤더바 */
 #header .main_header{
     width: 100%;
     max-width: 71.25rem;
@@ -85,9 +87,10 @@ body .fixed{
     cursor: pointer;
 }
 
+/* 메인 */
 #main{
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
     position: relative;
 }
 
@@ -121,6 +124,7 @@ body .fixed{
     font-family: "Noto Sans KR";
 }
 
+/* 소개 */
 .about_me{
     width: 100%;
     height: 450px;
@@ -154,6 +158,10 @@ body .fixed{
     width: 33.3333333333%;
 }
 
+.about_me .about .ab:last-child{
+    width: 66.6666666666%;
+}
+
 .about_me .about .ab .inside{
     display: flex;
     flex-wrap: nowrap;
@@ -164,6 +172,15 @@ body .fixed{
     opacity: .8;
 }
 
+.about_me .about .ab .inside:last-child{
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    opacity: .8;
+}
 
 
 .about_me .about .ab .inside img{
@@ -183,7 +200,7 @@ body .fixed{
 }
 
 
-
+/* 스킬 */
 .skill{
     width: 100%;
     height: 400px;
@@ -210,7 +227,8 @@ body .fixed{
 }
 
 .sk_main{
-    width: 1200px;
+    /* width: 1200px; */
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -245,6 +263,7 @@ body .fixed{
 }
 
 
+/* 아카이브 */
 .archive{
     width: 100%;
     height: 400px;
@@ -317,6 +336,7 @@ body .fixed{
 }
 
 
+/* 프로젝트 */
 .project_inside{
     width: 100%;
     max-width: 71.25rem;
@@ -437,6 +457,41 @@ body .fixed{
     width: 16px;
     height: 16px;
 }
+
+/* 케리어 */
+/* .career .career_inside{
+    width: 100%;
+    max-width: 71.25rem;
+    padding: 4rem 1.5rem;
+    margin: 0 auto;
+}
+
+.career .career_inside .career_header{
+    position: relative;
+    display: table;
+    margin: 0 auto 3rem;
+}
+
+.career_header h3{
+    font-size: 3rem;
+    border-bottom: 1px solid #000;
+}
+
+.career .career_body{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+/* 풋터 */
+footer{
+    padding: 3rem 0;
+    background-color: #222;
+    font-size: .9rem;
+    color: #f5f5f5;
+    text-align: center;
+}
+
 
 /* 팝업 */
 .modal_pop{
@@ -592,6 +647,11 @@ body .fixed{
     font-size: 1.25rem;
 }
 
+.popup_box .markdown-body p img{
+    width: 100%;
+    object-fit: cover;
+}
+
 .popup_box .markdown-body a{
     word-break: break-all;
     color: rgba(13, 110, 253, 1);
@@ -642,3 +702,9 @@ blockquote{
 .hidden1{
     display: none;
 }
+
+.scollLock{
+    overflow: hidden;
+}
+
+

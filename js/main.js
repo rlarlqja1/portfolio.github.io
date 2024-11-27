@@ -83,55 +83,71 @@ for (name in headerMenu){
 function popup1() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup1');
+    const body = document.querySelector('body');
     modal_popup.style.display = "block";
     pro_pop.style.display = "block";
+    body.style.overflow = 'hidden';
 }
 
 function popup2() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup2');
+    const body = document.querySelector('body');
     modal_popup.style.display = "block";
     pro_pop.style.display = "block";
+    body.style.overflow = 'hidden';
 }
 
 function popup3() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup3');
+    const body = document.querySelector('body');
     modal_popup.style.display = "block";
     pro_pop.style.display = "block";
+    body.style.overflow = 'hidden';
 }
 
 function popup4() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup4');
+    const body = document.querySelector('body');
     modal_popup.style.display = "block";
     pro_pop.style.display = "block";
+    body.style.overflow = 'hidden';
 }
 
 function btn_close() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup1');
+    const body = document.querySelector('body');
     modal_popup.style.display = "none";
     pro_pop.style.display = "none";
+    body.style.removeProperty('overflow');
 }
 
 function btn_close2() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup2');
+    const body = document.querySelector('body');
     modal_popup.style.display = "none";
     pro_pop.style.display = "none";
+    body.style.removeProperty('overflow');
 }
 
 function btn_close3() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup3');
+    const body = document.querySelector('body');
     modal_popup.style.display = "none";
     pro_pop.style.display = "none";
+    body.style.removeProperty('overflow');
 }
 
 function btn_close4() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup4');
+    const body = document.querySelector('body');
     modal_popup.style.display = "none";
     pro_pop.style.display = "none";
+    body.style.removeProperty('overflow');
 }
