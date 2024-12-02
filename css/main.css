@@ -459,7 +459,7 @@ body .fixed{
 }
 
 /* 케리어 */
-/* .career .career_inside{
+.career .career_inside{
     width: 100%;
     max-width: 71.25rem;
     padding: 4rem 1.5rem;
@@ -480,8 +480,34 @@ body .fixed{
 .career .career_body{
     display: flex;
     flex-direction: column;
-} */
+}
 
+.career .career_inside .career_body .career_work{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    word-break: keep-all;
+    width: 60%;
+    margin: 0 auto 1.5rem;
+}
+
+.career .career_inside .career_body .career_work .career_title{
+    padding-left: .75rem;
+    margin-bottom: .5rem;
+    border-left: 4px solid #222;
+    font-weight: 700;
+    color: #222;
+    font-size: 1.2rem;
+}
+
+.career .career_inside .career_body .career_work .career_period{
+    padding-bottom: .5rem;
+    font-size: .95rem;
+    color: #6c757d;
+}
+
+.career .career_inside .career_body .career_work .career_description{
+    font-size: .95rem;
+}
 
 /* 풋터 */
 footer{
