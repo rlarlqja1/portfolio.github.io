@@ -116,6 +116,24 @@ function popup4() {
     body.style.overflow = 'hidden';
 }
 
+function popup5() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup5');
+    const body = document.querySelector('body');
+    modal_popup.style.display = "block";
+    pro_pop.style.display = "block";
+    body.style.overflow = 'hidden';
+}
+
+function popup6() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup6');
+    const body = document.querySelector('body');
+    modal_popup.style.display = "block";
+    pro_pop.style.display = "block";
+    body.style.overflow = 'hidden';
+}
+
 function btn_close() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup1');
@@ -146,6 +164,24 @@ function btn_close3() {
 function btn_close4() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup4');
+    const body = document.querySelector('body');
+    modal_popup.style.display = "none";
+    pro_pop.style.display = "none";
+    body.style.removeProperty('overflow');
+}
+
+function btn_close5() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup5');
+    const body = document.querySelector('body');
+    modal_popup.style.display = "none";
+    pro_pop.style.display = "none";
+    body.style.removeProperty('overflow');
+}
+
+function btn_close6() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup6');
     const body = document.querySelector('body');
     modal_popup.style.display = "none";
     pro_pop.style.display = "none";
