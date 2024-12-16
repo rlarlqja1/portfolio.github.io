@@ -134,6 +134,15 @@ function popup6() {
     body.style.overflow = 'hidden';
 }
 
+function popup7() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup7');
+    const body = document.querySelector('body');
+    modal_popup.style.display = "block";
+    pro_pop.style.display = "block";
+    body.style.overflow = 'hidden';
+}
+
 function btn_close() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup1');
@@ -182,6 +191,15 @@ function btn_close5() {
 function btn_close6() {
     const modal_popup = document.querySelector('#modal_pop');
     const pro_pop = document.querySelector('#project_popup6');
+    const body = document.querySelector('body');
+    modal_popup.style.display = "none";
+    pro_pop.style.display = "none";
+    body.style.removeProperty('overflow');
+}
+
+function btn_close7() {
+    const modal_popup = document.querySelector('#modal_pop');
+    const pro_pop = document.querySelector('#project_popup7');
     const body = document.querySelector('body');
     modal_popup.style.display = "none";
     pro_pop.style.display = "none";
